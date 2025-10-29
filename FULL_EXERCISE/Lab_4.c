@@ -73,8 +73,8 @@ static void Task_Blink5(void);
 static void Task_Startup(void){
   if (phase == 1){
     HAL_GPIO_WritePin(GPIOA, LED1_Pin|LED2_Pin|LED3_Pin|LED4_Pin|LED5_Pin, GPIO_PIN_SET);
+	  
 	phase = 2;
-
     SCH_Add_Task(Task_Blink1, 0, 50);
     SCH_Add_Task(Task_Blink2, 0, 100);
     SCH_Add_Task(Task_Blink3, 0, 150);
@@ -283,4 +283,5 @@ void assert_failed(uint8_t *file, uint32_t line)
 #endif /* USE_FULL_ASSERT */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+
 
