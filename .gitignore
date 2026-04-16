@@ -1,0 +1,15 @@
+*.pdsbak
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.bin
+*.map
+*.list
+.settings/
+.project
+.cproject
+.mxproject
+.DS_Store
+Thumbs.db
